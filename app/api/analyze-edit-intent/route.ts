@@ -114,7 +114,7 @@ export async function POST(request: NextRequest) {
     
     // Use AI to create a search plan
     const result = await generateObject({
-      model: aiModel,
+      model: aiModel as LanguageModel,
       schema: searchPlanSchema,
       messages: [
         {
