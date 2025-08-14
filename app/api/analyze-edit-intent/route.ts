@@ -6,6 +6,7 @@ import { createGoogleGenerativeAI } from '@ai-sdk/google';
 import { generateObject } from 'ai';
 import { z } from 'zod';
 import type { FileManifest } from '@/types/file-manifest';
+import { LanguageModel } from 'ai';
 
 const groq = createGroq({
   apiKey: process.env.GROQ_API_KEY,
